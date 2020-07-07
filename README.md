@@ -1,6 +1,8 @@
 # Schach
 
-Software Engineering project in the course CS2301 SoSe 2020 at Universität zu Lübeck. Apart from myself two other students contributed to the code and documentation. Documentation PDFs can be found here at the root of the repository.
+Software engineering project for the course CS2301 SoSe 2020 at Universität zu Lübeck. Apart from myself, two other students contributed to the code and documentation. Documentation PDFs can be found in the `docs` folder.
+
+Compile the project with `mvn clean compile javafx:jlink` and run with `./target/schach/bin/schach`. The program accepts some command lines flags. See the user manual documents for more information. Code analysis and test reports can be either run through maven or the `fullReport.sh`, `testReport.sh` or `analysisReport.sh` scripts.
 
 ## Imports
 
@@ -79,3 +81,7 @@ placeNewPiece(3, 0, new QueenPiece(Color.BLACK));
 placeNewPiece(7, 0, new KingPiece(Color.BLACK));
 placeNewPiece(4, 0, new KingPiece(Color.WHITE));
 ```
+
+## How to run the checker
+
+Compile the project with `mvn clean compile javafx:jlink` and then run the checker with `java -jar checker.jar "target/schach/bin/schach --no-gui" > log.txt`. Output is written to the specified log file and contains the result of the checker testing the chess engine.
