@@ -1,0 +1,9 @@
+.idea/
+*.iml
+target/
+.settings/
+.vscode/
+reports/
+.DS_Store
+checker.jar
+*.txt
