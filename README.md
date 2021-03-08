@@ -4,6 +4,11 @@ Software engineering project for the course CS2301 SoSe 2020 at Universität zu 
 
 Compile the project with `mvn clean compile javafx:jlink` and run with `./target/schach/bin/schach`. The program accepts some command lines flags. See the user manual documents for more information. Code analysis and test reports can be either run through maven or the `fullReport.sh`, `testReport.sh` or `analysisReport.sh` scripts.
 
+## Licensing
+
+See LICENSE.md for more information.  
+TLDR: There currently is no license. You have no permission to do anything with this source code.
+
 ## Imports
 
 All import sections (also in tests) should have the following structure. Only use `.*` imports for `.GameTestUtils.*` and `Assertions.*` and nothing else. Try to group imports from `schach.` by subpackage. Leave a empty line between imports from different packages like `java` and `schach`.
